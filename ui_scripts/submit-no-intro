@@ -1,0 +1,4 @@
+#!/usr/bin/env nix-shell
+#!nix-shell -i bash -p chromium nodejs
+export PUPPETEER_EXECUTABLE_PATH=$(which chromium)
+node submit_no_nointro.js "$1"
